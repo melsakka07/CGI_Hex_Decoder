@@ -130,7 +130,7 @@ result_5g = tk.Text(root, height=10, width=60)
 result_5g.grid(row=6, column=0, columnspan=2, padx=10, pady=5)
 
 # Add note
-ttk.Label(root, text="Done by M. ElSakka", font=("Helvetica", 8)).grid(row=7, column=0, columnspan=2, pady=10)
+ttk.Label(root, text="Done by M. ElSakka, All Rights Reserved 2024 ©️", font=("Helvetica", 8)).grid(row=7, column=0, columnspan=2, pady=10)
 
 # Run the application
 root.mainloop()
