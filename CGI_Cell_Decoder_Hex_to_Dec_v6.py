@@ -1,6 +1,18 @@
 import tkinter as tk
 from tkinter import ttk
 from PIL import Image, ImageTk
+import os
+import sys
+
+#https://stackoverflow.com/questions/31836104/pyinstaller-and-onefile-how-to-include-an-image-in-the-exe-file
+
+def resource_path(relative_path):
+    try:
+        base_path = sys._MEIPASS2
+    except Exception:
+        base_path = os.path.abspath(".")
+
+    return os.path.join(base_path, relative_path)
 
 def decode_4g_cgi(hex_str):
     if not hex_str:
@@ -103,7 +115,7 @@ root.title("CGI Cell Decoder Hex to Dec")
 ttk.Label(root, text="Mohanad [CGI Cell Decoder Hex to Dec]", font=("Helvetica", 16)).grid(row=0, column=0, columnspan=2, pady=10)
 
 # Add logo image
-image = Image.open("du.png")
+image = Image.open(resource_path("du.png"))
 image = image.resize((100, 100), Image.LANCZOS)
 logo = ImageTk.PhotoImage(image)
 logo_label = ttk.Label(root, image=logo)

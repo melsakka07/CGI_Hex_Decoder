@@ -1,0 +1,4 @@
+www.online-convert.com
+https://stackoverflow.com/questions/31836104/pyinstaller-and-onefile-how-to-include-an-image-in-the-exe-file
+https://jrsoftware.org/isdl.php#stable
+https://jrsoftware.org/isdl.php#stable
